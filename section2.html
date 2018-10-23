@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Final Paper - Technical Overview</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div id=head>
+    <h1 class=highlightMe>Technical Overview</h1>
+  </div>
+  <p>The general functionality of all IM networks includes user authentication with a network server, two-person instant messaging in real time, and the maintenance of contact or buddy lists. </p>
+  <p> IM networks make use of a client/server architecture (<a href=resources.html#Jennings>Jennings III</a>). Users of an instant messaging software use a client application, potentially in the form of an app or on a web browser, to login to servers and exchange messages with other users (<a href=resources.html#DeHoyos>De Hoyos</a>). Clients use domain names to determine the IP address and port to connect to a network's server (<a href=resources.html#DeHoyos>De Hoyos</a>). </p>
+  <table>
+    <tr>
+      <td> <img src="howitworks1.png" alt="User Sends Data for Server to Authenticate"/> </td> <td>Before the client can send messages, the client sends a user ID and password; this must be verified before the server will send the client data or allow it to send messages (<a href=resources.html#DeHoyos>De Hoyos</a>).
+      </td>
+    </tr>
+    <tr>
+      <td> <img src="howitworks2.png" alt="User Sends Data for Server to Authenticate"/> </td>
+      <td>
+Once verified, the server sends the client's contact list data; this typically includes information about the presence status, or availability, of each of their contacts (<a href=resources.html#DeHoyos>De Hoyos</a>). The server also updates the user’s presence on all of their contacts' buddy lists (<a href=resources.html#DeHoyos>De Hoyos</a>).
+      </td>
+    </tr>
+    <tr>
+      <td> <img src="howitworks3.png" alt="User Sends Data for Server to Authenticate"/> </td>
+      <td>
+After this, messages can be exchanged between clients. In order to maintain real time conversations and contacts lists, the client and the server remain connected for as long as the user is logged in via a persistent connection (<a href=resources.html#DeHoyos>De Hoyos</a>).
+      </td>
+    </tr>
+    <tr> <td colspan="2"> This persistent connection allows the server to constantly update a user's presence data and the presence data of their contacts and to send messages instantly.</td>
+    </tr>
+    <tr>
+      <td>   <img src="howitworks4.png" alt="User Sends Data for Server to Authenticate"/> </td>
+      <td>
+        When you sign out, the client lets the server know to end the connection, and the server updates presence data for the user's contacts.
+      </td>
+    </tr>
+  </table>
+<center><a href="section1.html">Previous Section</a> <a href="section3.html">Next Section</a> <br/>
+<a href="home.html">Return to Home</a></center>
+</body>
+</html>

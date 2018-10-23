@@ -12,6 +12,21 @@ body {
   max-width: 400px;
   text-align: center;
 }
-td, th {
+td, th{
    padding-top: 20px;
+   padding-left: 20px;
+   padding-bottom: 20px;
+   text-indent: 30px;
+ }
+ a:link, a:visited{
+   color: black;
+   text-decoration: underline;
+ }
+ a:hover {
+   color: black;
+   background-color: #BCE8FA;
+   text-decoration: none;
+ }
+ p {
+   text-indent: 30px;
  }
